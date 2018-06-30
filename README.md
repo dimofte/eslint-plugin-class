@@ -1,15 +1,14 @@
 # eslint-plugin-classes
 
-custom ESLint rule, checks class style.
-(will adding more rules for class)
+ESLint rule that checks style on classes.
 
 ## Rule Details
 
 ### space
 
-should be space between method name and parens.
+Should be space between method name and parens.
 
-The following patterns are considered warnings:
+The following patterns are considered _invalid_:
 
 ```js
 class Foo {
@@ -31,7 +30,7 @@ class Foo {
 }
 ```
 
-The following patterns are not warnings:
+The following patterns are _valid_:
 
 ```js
 class Foo {
@@ -59,7 +58,7 @@ class Foo {
 - method name should start with lower case (option: "method")
 - class name is required (option: "name-required")
 
-The following patterns are considered warnings:
+The following patterns are _invalid_:
 
 ```js
 class foo {
@@ -71,7 +70,7 @@ class Foo {
 }
 ```
 
-The following patterns are not warnings:
+The following patterns are _valid_:
 
 ```js
 class Foo {
